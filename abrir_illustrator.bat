@@ -1,4 +1,3 @@
 @echo off
-chcp 65001 >nul
-title Arreglar PDF para Illustrator
-py "%~dp0arreglar_y_abrir.py" %*
+rem Compatibilidad con el menu contextual instalado antes de reorganizar carpetas.
+call "%~dp0simbolos-y-fuentes\abrir_illustrator.bat" %*

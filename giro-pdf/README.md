@@ -25,7 +25,7 @@ ruta en lugar de crear `-FIXED-FIXED`.
 ## Dos problemas distintos
 
 - **Orientacion incorrecta:** usa esta carpeta.
-- **Simbolos rotos o fuentes:** usa [la herramienta de simbolos](../README.md).
+- **Simbolos rotos o fuentes:** usa [simbolos-y-fuentes/](../simbolos-y-fuentes/README.md).
 - **Ambos problemas:** corrige primero el giro y procesa despues el archivo
   `-FIXED.pdf` con la herramienta de simbolos.
 
