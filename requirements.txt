@@ -1,0 +1,3 @@
+# Version verificada: 2.0 desplaza texto al eliminar glifos de un mismo span.
+pymupdf==1.28.2
+fonttools
