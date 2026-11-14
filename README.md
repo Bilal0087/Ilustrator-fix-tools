@@ -1,5 +1,17 @@
 # Arreglar PDF para Illustrator
 
+Este repositorio contiene **dos herramientas independientes**:
+
+| Problema | Herramienta | Ubicacion |
+| --- | --- | --- |
+| Simbolos que se convierten en cuadros o fuentes incorrectas | Arreglar y abrir en Illustrator | Raiz del repositorio; instrucciones debajo |
+| PDF que Illustrator abre girado | Corregir giro del PDF | [giro-pdf/](giro-pdf/README.md) |
+
+Si necesitas ambas, corrige primero el giro y pasa el PDF `-FIXED.pdf` a la
+herramienta de simbolos. Cada herramienta tiene sus propias dependencias.
+
+## Simbolos y fuentes
+
 Herramienta para Windows: conserva como texto editable las fuentes de texto
 instaladas (incluidas Arial/Calibri en PDF Type0/CID) o que puede proporcionar.
 Convierte a curvas las fuentes matematicas y de simbolos, y los operadores,

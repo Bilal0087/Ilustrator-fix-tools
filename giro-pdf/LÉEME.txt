@@ -1,0 +1,43 @@
+ARREGLAR PDF PARA ILLUSTRATOR
+=============================
+
+¿Para qué sirve?
+----------------
+Corrige los PDF que Adobe Illustrator abre GIRADOS (los ves horizontales en
+Edge/Acrobat, pero Illustrator los abre en vertical, o al revés).
+
+Causa: el PDF guarda la página en una orientación + una etiqueta "/Rotate"
+que dice "muéstralo girado". Illustrator ignora esa etiqueta. Esta herramienta
+"hornea" el giro dentro del contenido (deja /Rotate = 0), conservando los
+vectores (NO rasteriza, no pierde calidad).
+
+
+Cómo usarla (3 formas)
+----------------------
+1) Acceso directo del Escritorio  ->  "Arreglar PDF (Illustrator)"
+   - Doble clic: se abre la ventana. Arrastra el PDF dentro.
+   - O arrastra el PDF directamente SOBRE el icono del acceso directo.
+
+2) Carpeta de la herramienta  ->  "Arreglar PDF.bat"
+   - Arrastra uno o varios PDF sobre el .bat.
+
+3) Abre la ventana y pulsa "Seleccionar PDF(s)".
+
+
+Resultado
+---------
+Crea una copia nueva junto al original con el sufijo  -FIXED.pdf
+(el original NO se toca).  Ábrela en Illustrator.
+
+Si marcas "Reemplazar el original", sobrescribe el archivo original
+(mismo nombre, sin -FIXED).
+
+Puedes soltar VARIOS PDF a la vez.
+
+
+Requisitos
+--------------------------
+- Python 3.12
+- Paquetes:  pypdf  y  tkinterdnd2
+  (si algún día fallara: abre PowerShell y ejecuta
+   python -m pip install -r requirements.txt)
